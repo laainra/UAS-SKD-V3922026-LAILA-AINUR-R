@@ -7,10 +7,10 @@
 ### LANGKAH LANGKAH
 
 #### 1. npx create-react-app uasskd
-![npx create react ] (https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/create%20react%20app.png?raw=true)
+![npx create react ](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/create%20react%20app.png?raw=true)
 #### 2. npm i hardhat --save-dev
 #### 3. npx hardhat init
-![hardhat init] (https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/install%20hardhat%20%20%26%20hardhat%20innit.png?raw=true)
+![hardhat init](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/install%20hardhat%20%20%26%20hardhat%20innit.png?raw=true)
 #### 4. Tulis script 
 
 ##### contracts/Greeter.sol
