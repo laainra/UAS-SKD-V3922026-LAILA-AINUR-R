@@ -2,15 +2,15 @@
 
 ## Laila Ainur Rahma (V3922026)
 
-In the project directory, you can run:
+
 
 ### LANGKAH LANGKAH
 
 #### 1. npx create-react-app uasskd
-![npx create react ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/create%20react%20app.png?raw=true
+![npx create react ](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/create%20react%20app.png?raw=true)
 #### 2. npm i hardhat --save-dev
 #### 3. npx hardhat init
-![hardhat init]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/install%20hardhat%20%20%26%20hardhat%20innit.png?raw=true
+![hardhat init](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/install%20hardhat%20%20%26%20hardhat%20innit.png?raw=true)
 #### 4. Tulis script 
 
 ##### contracts/Greeter.sol
@@ -68,12 +68,12 @@ main()
 ```
 #### 5. npx hardhat compile (untuk mengcompile solidity)
 #### 6. npx hardhat node
-![npx  hardhat node ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/hardhat%20node.png?raw=true
+![npx  hardhat node ](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/hardhat%20node.png?raw=true)
 #### 7. buat interface react
-![int react ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/interface.png?raw=true
+![int react (]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/interface.png?raw=true)
 #### 8. jika fetch greeting maka akan menampilkan greeting yang tekah dibuat
-![fetch ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/fetch%20greeting.png?raw=true
+![fetch ](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/fetch%20greeting.png?raw=true)
 
 #### 7. jika set greeting maaka akan masuk ke akun metamask dan menampilkan transaksi
-![set]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/set%20greeting.png?raw=true
-![metamask]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/metamask.png?raw=true
+![set](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/set%20greeting.png?raw=true)
+![metamask](https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/metamask.png?raw=true)
