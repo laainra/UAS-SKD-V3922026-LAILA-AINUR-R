@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# UAS SKD SIMPLE SMART CONTRACT  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Laila Ainur Rahma (V3922026)
 
 In the project directory, you can run:
 
-### `npm start`
+### LANGKAH LANGKAH
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 1. npx create-react-app uasskd
+![npx create react ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/create%20react%20app.png?raw=true
+#### 2. npm i hardhat --save-dev
+#### 3. npx hardhat init
+![hardhat init]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/install%20hardhat%20%20%26%20hardhat%20innit.png?raw=true
+#### 4. Tulis script 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##### contracts/Greeter.sol
+``` Solidity
+//SPDX-License-Identifier: Unlicense
+pragma solidity ^0.8.0;
 
-### `npm test`
+import "hardhat/console.sol";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+contract Greeter {
+    string private greeting;
 
-### `npm run build`
+    constructor(string memory _greeting) {
+        console.log("Deploying a Greeter with greeting:", _greeting);
+        greeting = _greeting;
+    }
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+function greet() public view returns (string memory) {
+    console.log("Entering greet function");
+    // ... rest of the code ...
+    console.log("Exiting greet function");
+    return greeting;
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    function setGreeting(string memory _greeting) public {
+        console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
+        greeting = _greeting;
+    }
+}
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+##### script/Deploy.js
+``` Javascript
+const hre = require("hardhat");
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+async function main() {
+  const Greeter = await hre.ethers.getContractFactory("Greeter");
+  const greeter = await Greeter.deploy("Hello, Hardhat! It's Lala's Project for UAS SKD");
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  console.log("Greeter deployed to:", greeter.address);
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
 
-### Code Splitting
+```
+#### 5. npx hardhat compile (untuk mengcompile solidity)
+#### 6. npx hardhat node
+![npx  hardhat node ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/hardhat%20node.png?raw=true
+#### 7. buat interface react
+![int react ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/interface.png?raw=true
+#### 8. jika fetch greeting maka akan menampilkan greeting yang tekah dibuat
+![fetch ]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/fetch%20greeting.png?raw=true
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 7. jika set greeting maaka akan masuk ke akun metamask dan menampilkan transaksi
+![set]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/set%20greeting.png?raw=true
+![metamask]https://github.com/laainra/UAS-SKD-V3922026-LAILA-AINUR-R/blob/main/Screenshot/metamask.png?raw=true
